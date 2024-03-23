@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Group</title>
+    <link rel="stylesheet" href="group.css" />
+
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-FBD/1KrVnL5weGhjGfQwS8LXQRnAFyL10P8Lj2IzNfMFgQpspADZl+yT/kFVDJ9RzQ0TI4l7ePFdmWCHTj37/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script>
+      $(document).ready(function () {
+        $("#icon").click(function () {
+          $("ul").toggleClass("show");
+        });
+
+        var tabButtons = document.querySelectorAll(
+          ".tabcontainer .buttoncontainer button"
+        );
+        var tabPanels = document.querySelectorAll(".tabcontainer .tabpanel");
+
+        function showPanel(panelIndex, colorCode) {
+          tabButtons.forEach(function (node) {
+            node.style.backgroundColor = "black";
+            node.style.color = "red";
+          });
+          tabButtons[panelIndex].style.backgroundColor = colorCode;
+          tabButtons[panelIndex].style.color = "black";
+          tabPanels.forEach(function (node) {
+            node.style.display = "none";
+          });
+          tabPanels[panelIndex].style.display = "block";
+          tabPanels[panelIndex].style.backgroundColor = colorCode;
+        }
+
+        tabButtons.forEach(function (button, index) {
+          button.addEventListener("click", function () {
+            showPanel(index, "rgba(240, 237, 237, 0.874)");
+          });
+        });
+
+        showPanel(1, "rgba(240, 237, 237, 0.874)"); // Set the default tab to the first one
+      });
+    </script>
+
+    <style>
+      .city {
+        transform: rotate(-60deg);
+        font-size: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="left-section">
+        <a href=""><img class="swa-logo" src="images/images.jpg" alt="" /></a>
+        <label class="school-name" for="">South West Academy</label>
+      </div>
+      <div class="middle-section"></div>
+      <div class="right-section">
+        <ul>
+          <a href="index.html"><li>HOME</li></a>
+          <a class="FEEDBACK" href="feedback.html"><li>FEEDBACK</li></a>
+          <a class="group" href="group.html"><li>OUR GROUP</li></a>
+          <a href="login.html"><li>LOGIN</li></a>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tabcontainer">
+      <div class="buttoncontainer">
+        <button onclick="showPanel(0, 'rgba(240, 237, 237, 0.874)')">
+          Group Information
+        </button>
+        <button onclick="showPanel(1, 'rgba(240, 237, 237, 0.874)')">
+          Group Members
+        </button>
+      </div>
+      <div class="tabpanel">
+        <h1>Information about the students</h1>
+        <ol type="1">
+          <li>There are 4 group members</li>
+          <li>Two of them are 17 years old, one is 18 and the other is 19</li>
+          <li>They all are grade 11 students</li>
+          <li>They all live in Addis Ababa</li>
+        </ol>
+      </div>
+
+      <div class="tabpanel">
+        <table>
+          <tr>
+            <th>St. ID</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Grade</th>
+            <th>City</th>
+          </tr>
+          <tr>
+            <td>101</td>
+            <td>Brook</td>
+            <td rowspan="2">17</td>
+            <td style="font-size: 40px; font-weight: 100" rowspan="4">11</td>
+            <td class="city" rowspan="6">Addis Ababa</td>
+          </tr>
+          <tr>
+            <td>102</td>
+            <td>Ronaldo</td>
+          </tr>
+          <tr>
+            <td>103</td>
+            <td>Alazar</td>
+            <td>18</td>
+          </tr>
+          <tr>
+            <td>104</td>
+            <td>Nahom</td>
+            <td>19</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

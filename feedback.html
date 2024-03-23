@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback</title>
+    <link rel="stylesheet" href="feedback.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="left-section">
+        <img
+          class="swa-logo"
+          style="cursor: pointer"
+          src="images/images.jpg"
+          alt=""
+        />
+        <label class="school-name" for="">South West Academy</label>
+      </div>
+      <div class="middle-section"></div>
+      <div class="right-section">
+        <ul>
+          <a href="index.html"><li>HOME</li></a>
+          <a class="FEEDBACK" href=""><li>FEEDBACK</li></a>
+          <a href="group.html"><li>OUR GROUP</li></a>
+          <a href="login.html"><li>LOGIN</li></a>
+        </ul>
+      </div>
+    </div>
+
+    <form action="index.html">
+      <div class="first-container">
+        <input type="text" placeholder="Enter Full name" required />
+        <input type="number" placeholder="Enter ST.ID" />
+        <input type="email" placeholder="Email Address" />
+      </div>
+      <div class="second-container">
+        <input class="message" type="text" placeholder="Message" />
+        <div
+          style="
+            width: 300px;
+            margin-left: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          "
+        >
+          <input class="reset" type="reset" />
+          <input class="submit" type="submit" />
+        </div>
+      </div>
+      <div class="third-container">
+        <div class="like">
+          <label style="font-size: 25px; color: white"
+            >What are the things you love about this school</label
+          >
+          <br />
+
+          <input type="checkbox" />The Play ground <br />
+          <input type="checkbox" />The Dinning hall <br />
+          <input type="checkbox" />The Teachers <br />
+          <input type="checkbox" />The Students <br />
+        </div>
+        <div class="plan">
+          <label style="font-size: 25px; color: white"
+            >Do you plan on staying in this school</label
+          >
+          <select>
+            <option>YES😁</option>
+            <option>NO😡</option>
+          </select>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

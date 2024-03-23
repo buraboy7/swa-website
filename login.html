@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOGIN PAGE</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="left-section">
+        <a href=""><img class="swa-logo" src="images/images.jpg" alt="" /></a>
+        <label class="school-name" for="">South West Academy</label>
+      </div>
+      <div class="middle-section"></div>
+      <div class="right-section">
+        <ul>
+          <a href="index.html"><li>HOME</li></a>
+          <a class="FEEDBACK" href="feedback.html"><li>FEEDBACK</li></a>
+          <a href="group.html"><li>OUR GROUP</li></a>
+          <a class="login" href="login.html"><li>LOGIN</li></a>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container">
+      <form id="myForm" action="javascript:void(0);" method="get">
+        <input
+          class="ronaldo"
+          type="text"
+          placeholder="Enter Full name"
+          required
+        /><br />
+
+        <input
+          class="ronaldo"
+          type="email"
+          placeholder="Enter your Email"
+        /><br />
+
+        <input
+          class="ronaldo"
+          type="password"
+          min="7"
+          max="12"
+          placeholder="Enter password"
+        /><br />
+
+        <input
+          class="ronaldo"
+          type="tel"
+          placeholder="+251-000-000-000"
+        /><br />
+
+        <div class="gender-container">
+          <label style="margin-right: 7px" for="gender">Gender:</label>
+
+          <div class="gender-option">
+            <label for="Male">Male</label>
+            <input
+              style="cursor: pointer"
+              type="radio"
+              id="Male"
+              name="gender"
+            />
+          </div>
+
+          <div class="gender-option">
+            <label for="Female">Female</label>
+            <input
+              style="cursor: pointer"
+              type="radio"
+              id="Female"
+              name="gender"
+            />
+          </div>
+
+          <div class="gender-option">
+            <label for="I'd prefer not to say">I'd prefer not to say</label>
+            <input
+              style="cursor: pointer"
+              type="radio"
+              id="I'd prefer not to say"
+              name="gender"
+            />
+          </div>
+        </div>
+
+        <div>
+          <input class="reset" type="reset" placeholder="reset" />
+        </div>
+
+        <input class="submit" type="submit" value="submit" />
+      </form>
+    </div>
+    <script src="scripts.js"></script>
+    <script>
+      document.getElementById("myForm").onsubmit = function () {
+        window.location.href = "index.html";
+        return false;
+      };
+    </script>
+      </form>
+    </div>
+  </body>
+</html>

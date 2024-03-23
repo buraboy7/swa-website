@@ -1,0 +1,197 @@
+body {
+    text-align: center;
+    padding-top: 9vh;
+    padding-bottom: 10vh;
+    margin: 0;
+    background: linear-gradient(-45deg, red, red, blue, orange, yellow, green, aqua);
+    background-size: 1000% 1000%;
+    animation: animate 10s ease infinite;
+}
+@keyframes animate {
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 80% 50%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
+  }
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 90px;
+    left: 0;
+    background: #34495e;
+    display: flex;
+    flex-direction: row;
+    z-index: 100;
+}
+a {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.left-section {
+    width: 500px;
+    text-align: center;
+}
+.middle-section {
+    flex: 1;
+}
+.right-section {
+    width: 650px;
+}
+.swa-logo {
+    height: 79px;
+    border-radius: 50px;
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-left: 30px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.school-name {
+    font-size: 30px;
+    color: white;
+    font-family: montserrat;
+    display: inline-block;
+    vertical-align: middle;
+}
+ul {
+    display: flex;
+    list-style: none;
+}
+
+img a:hover {
+    display: none;
+    border: none;
+}
+
+ul a {
+    text-decoration: none;
+    color: white; 
+    margin-left: 20px;
+    font-size: 20px;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+.login {
+  border: solid;
+  border-width: 1px;
+}
+a.active,
+a:hover:not(.login) {
+    border: 1px solid white;
+    transition: 1s;
+}
+.header li {
+   line-height: 20px;
+}
+
+@media (max-width: 900px) {
+    .school-name {
+      display: none; 
+    }
+}
+@media (max-width: 600px) {
+    .FEEDBACK {
+      display: none; 
+    }
+}
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* Additional styling */
+    width: 500px; /* Adjust the width as needed */
+    border-style: solid;
+    border-width: 3px;
+    border-color: aqua;
+  }
+  
+   .ronaldo {
+    margin-top: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: opacity 0.7s;
+   }
+   .ronaldo:hover {
+    opacity: 0.6;
+   }
+   .ronaldo:active{
+    background-color: white;
+    color: black;
+   }
+  
+   ::placeholder:hover {
+    color: white;
+   }   
+   .container label {
+    color: white;
+  }
+  
+  .gender-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .gender-option {
+    display: inline-block;
+    margin-right: 10px; 
+    align-items: center;
+    margin-top: 0;
+    height: fit-content;
+  }
+  .submit {
+    font-size: 17px;
+    font-weight: 300;
+    transition: opacity 1s background-color 0s;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 15px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+   }
+   .submit:hover {
+    cursor: pointer;
+    opacity: 0.7;
+   }
+   .submit:active {
+    background-color: black;
+    color: white;
+   }
+   .reset {
+    font-size: 17px;
+    font-weight: 300;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 16px;
+    margin-bottom: 8px;
+    cursor: pointer;text-transform: uppercase;
+   }
+   .reset:hover {
+    opacity: 0.8; 
+    transition: opacity 1s background-color 0s; 
+   }
+   .reset:active {
+    background-color: black;
+    color: white;
+   } 
